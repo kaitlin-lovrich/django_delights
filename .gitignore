@@ -1,7 +1,7 @@
 venv
-__init__.py
+*__init__.py
 asgi.py
 wsgi.py
-manage.py
+*manage.py
 __pycache__/
 db.sqlite3
