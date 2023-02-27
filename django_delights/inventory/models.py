@@ -17,3 +17,7 @@ class MenuItem(models.Model):
     def __str__(self):
         return self.title
         
+class RecipeRequirements(models.Model):
+    menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)
+    ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
+    quantity = models.IntegerField(default=0)
